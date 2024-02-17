@@ -1,0 +1,20 @@
+com.quanime.draw
+
+QuAnime
+
+QuAnime Drawing
+Anime: Draw, Customize, Share
+
+draw,anime,poster,character,notify,list,collection,favorite,share,short,top,customize
+
+
+Anime Draw is a user-friendly mobile application designed for enthusiasts of anime art
+
+The highlight of Anime Draw is its step-by-step guide on drawing anime characters.
+- The app offers clear and detailed instructions, empowering users to bring their favorite anime characters to life on their digital canvas.
+- One distinctive feature is the Anime Poster customization option.
+- Users can choose their preferred anime, select specific characters, and then personalize their very own anime poster.
+- The "Draw" function brings these creations to life with a simple tap.
+- Anime Draw also introduces a "Favorite" feature, enabling users to bookmark and easily access their preferred anime drawings and posters.
+- Sharing your artistic endeavors is made seamless with the built-in sharing feature.
+- You can showcase their anime drawings and posters with friends, family, and the broader community through various social media platforms directly from the app.

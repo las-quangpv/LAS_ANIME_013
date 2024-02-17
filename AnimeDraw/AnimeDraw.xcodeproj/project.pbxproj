@@ -1,0 +1,947 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2AC331819A8B901F78ABF922 /* Pods_AnimeDraw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D884A774279145DC2BCFED /* Pods_AnimeDraw.framework */; };
+		5224477A2AFBCC9500C5D686 /* AnimeDraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522447792AFBCC9500C5D686 /* AnimeDraw.swift */; };
+		5224477C2AFBD7FC00C5D686 /* UIView+constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5224477B2AFBD7FC00C5D686 /* UIView+constraints.swift */; };
+		52349DB02B1449F900FCE307 /* DrawThumbnailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52349DAE2B1449F900FCE307 /* DrawThumbnailCell.swift */; };
+		52349DB12B1449F900FCE307 /* DrawThumbnailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52349DAF2B1449F900FCE307 /* DrawThumbnailCell.xib */; };
+		52349DB42B144A3F00FCE307 /* BorderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52349DB22B144A3F00FCE307 /* BorderView.xib */; };
+		52349DB52B144A3F00FCE307 /* BorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52349DB32B144A3F00FCE307 /* BorderView.swift */; };
+		52349DB72B144A4500FCE307 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52349DB62B144A4500FCE307 /* BottomSheetViewController.swift */; };
+		52349DBA2B1474B100FCE307 /* databaseanime.db in Resources */ = {isa = PBXBuildFile; fileRef = 52349DB92B1474B100FCE307 /* databaseanime.db */; };
+		52349DBC2B1474FE00FCE307 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52349DBB2B1474FE00FCE307 /* DatabaseManager.swift */; };
+		52349DBF2B148C5200FCE307 /* ListPosterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52349DBD2B148C5200FCE307 /* ListPosterVC.swift */; };
+		52349DC02B148C5200FCE307 /* ListPosterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52349DBE2B148C5200FCE307 /* ListPosterVC.xib */; };
+		52349DC32B14906B00FCE307 /* PosterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52349DC12B14906B00FCE307 /* PosterCell.swift */; };
+		52349DC42B14906B00FCE307 /* PosterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52349DC22B14906B00FCE307 /* PosterCell.xib */; };
+		52349DC72B1490F700FCE307 /* PosterFavouriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52349DC52B1490F700FCE307 /* PosterFavouriteVC.swift */; };
+		52349DC82B1490F700FCE307 /* PosterFavouriteVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52349DC62B1490F700FCE307 /* PosterFavouriteVC.xib */; };
+		52349DCB2B14911600FCE307 /* PosterFavouriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52349DC92B14911600FCE307 /* PosterFavouriteCell.swift */; };
+		52349DCC2B14911600FCE307 /* PosterFavouriteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52349DCA2B14911600FCE307 /* PosterFavouriteCell.xib */; };
+		5264A67C2AF0D81D009CEB62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264A67B2AF0D81D009CEB62 /* AppDelegate.swift */; };
+		5264A67E2AF0D81D009CEB62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264A67D2AF0D81D009CEB62 /* SceneDelegate.swift */; };
+		5264A6852AF0D81E009CEB62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5264A6842AF0D81E009CEB62 /* Assets.xcassets */; };
+		5264A6882AF0D81E009CEB62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5264A6862AF0D81E009CEB62 /* LaunchScreen.storyboard */; };
+		5264A6932AF0D81E009CEB62 /* AnimeDrawTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264A6922AF0D81E009CEB62 /* AnimeDrawTests.swift */; };
+		5264A69D2AF0D81E009CEB62 /* AnimeDrawUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264A69C2AF0D81E009CEB62 /* AnimeDrawUITests.swift */; };
+		5264A69F2AF0D81E009CEB62 /* AnimeDrawUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264A69E2AF0D81E009CEB62 /* AnimeDrawUITestsLaunchTests.swift */; };
+		5264A6B02AF0DA58009CEB62 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264A6AC2AF0DA58009CEB62 /* HomeVC.swift */; };
+		5264A6B12AF0DA58009CEB62 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5264A6AD2AF0DA58009CEB62 /* HomeVC.xib */; };
+		5264A6B22AF0DA58009CEB62 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264A6AE2AF0DA58009CEB62 /* SplashVC.swift */; };
+		5264A6B32AF0DA58009CEB62 /* SplashVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5264A6AF2AF0DA58009CEB62 /* SplashVC.xib */; };
+		5264A6B62AF0DC90009CEB62 /* anim_loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 5264A6B52AF0DC90009CEB62 /* anim_loading.json */; };
+		5264A6B92AF0DCCE009CEB62 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264A6B82AF0DCCE009CEB62 /* BaseViewController.swift */; };
+		5264A6C22AF0F93B009CEB62 /* Poster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264A6C12AF0F93B009CEB62 /* Poster.swift */; };
+		5264A6C52AF0FAAE009CEB62 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264A6C42AF0FAAE009CEB62 /* Constants.swift */; };
+		526587802B15862800C66B48 /* PracticeDrawAnimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5265877E2B15862800C66B48 /* PracticeDrawAnimeVC.swift */; };
+		526587812B15862800C66B48 /* PracticeDrawAnimeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5265877F2B15862800C66B48 /* PracticeDrawAnimeVC.xib */; };
+		526587832B158C1E00C66B48 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526587822B158C1E00C66B48 /* History.swift */; };
+		526587862B158C8100C66B48 /* HistoryDrawVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526587842B158C8100C66B48 /* HistoryDrawVC.swift */; };
+		526587872B158C8100C66B48 /* HistoryDrawVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526587852B158C8100C66B48 /* HistoryDrawVC.xib */; };
+		5265878A2B158C9E00C66B48 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526587882B158C9E00C66B48 /* HistoryCell.swift */; };
+		5265878B2B158C9E00C66B48 /* HistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526587892B158C9E00C66B48 /* HistoryCell.xib */; };
+		5265878D2B15916800C66B48 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5265878C2B15916800C66B48 /* Utils.swift */; };
+		5265878F2B15919D00C66B48 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5265878E2B15919D00C66B48 /* Extensions.swift */; };
+		526587922B15CF3B00C66B48 /* PracticeInfoAnimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526587902B15CF3B00C66B48 /* PracticeInfoAnimeVC.swift */; };
+		526587932B15CF3B00C66B48 /* PracticeInfoAnimeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526587912B15CF3B00C66B48 /* PracticeInfoAnimeVC.xib */; };
+		5286AD0A2AFB35C300ECF7EA /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5286AD092AFB35C300ECF7EA /* ShadowView.swift */; };
+		5286AD102AFB6C7300ECF7EA /* Saira-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5286AD0D2AFB6C2D00ECF7EA /* Saira-Bold.ttf */; };
+		5286AD112AFB6C7300ECF7EA /* Saira-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5286AD0E2AFB6C2D00ECF7EA /* Saira-Medium.ttf */; };
+		5286AD122AFB6C7300ECF7EA /* Saira-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5286AD0C2AFB6C2C00ECF7EA /* Saira-Regular.ttf */; };
+		5286AD132AFB6C7300ECF7EA /* Saira-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5286AD0F2AFB6C2D00ECF7EA /* Saira-SemiBold.ttf */; };
+		5286AD162AFB713400ECF7EA /* DrawAnimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5286AD142AFB713400ECF7EA /* DrawAnimeVC.swift */; };
+		5286AD172AFB713400ECF7EA /* DrawAnimeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5286AD152AFB713400ECF7EA /* DrawAnimeVC.xib */; };
+		5286AD1C2AFB716400ECF7EA /* DrawPosterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5286AD1A2AFB716400ECF7EA /* DrawPosterVC.swift */; };
+		5286AD1D2AFB716400ECF7EA /* DrawPosterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5286AD1B2AFB716400ECF7EA /* DrawPosterVC.xib */; };
+		5286AD202AFB717600ECF7EA /* DrawAnimePager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5286AD1E2AFB717600ECF7EA /* DrawAnimePager.swift */; };
+		5286AD212AFB717600ECF7EA /* DrawAnimePager.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5286AD1F2AFB717600ECF7EA /* DrawAnimePager.xib */; };
+		5286AD242AFB719700ECF7EA /* ListDrawAnimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5286AD222AFB719700ECF7EA /* ListDrawAnimeVC.swift */; };
+		5286AD252AFB719700ECF7EA /* ListDrawAnimeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5286AD232AFB719700ECF7EA /* ListDrawAnimeVC.xib */; };
+		52D6CE632AFB72BC006D9B53 /* DrawAnimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6CE612AFB72BC006D9B53 /* DrawAnimeCell.swift */; };
+		52D6CE642AFB72BC006D9B53 /* DrawAnimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52D6CE622AFB72BC006D9B53 /* DrawAnimeCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5264A68F2AF0D81E009CEB62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5264A6702AF0D81D009CEB62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5264A6772AF0D81D009CEB62;
+			remoteInfo = AnimeDraw;
+		};
+		5264A6992AF0D81E009CEB62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5264A6702AF0D81D009CEB62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5264A6772AF0D81D009CEB62;
+			remoteInfo = AnimeDraw;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D0C7C68F49DFF94C4AC3B19 /* Pods-AnimeDraw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeDraw.release.xcconfig"; path = "Target Support Files/Pods-AnimeDraw/Pods-AnimeDraw.release.xcconfig"; sourceTree = "<group>"; };
+		522447792AFBCC9500C5D686 /* AnimeDraw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDraw.swift; sourceTree = "<group>"; };
+		5224477B2AFBD7FC00C5D686 /* UIView+constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+constraints.swift"; sourceTree = "<group>"; };
+		52349DAE2B1449F900FCE307 /* DrawThumbnailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawThumbnailCell.swift; sourceTree = "<group>"; };
+		52349DAF2B1449F900FCE307 /* DrawThumbnailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrawThumbnailCell.xib; sourceTree = "<group>"; };
+		52349DB22B144A3F00FCE307 /* BorderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BorderView.xib; sourceTree = "<group>"; };
+		52349DB32B144A3F00FCE307 /* BorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderView.swift; sourceTree = "<group>"; };
+		52349DB62B144A4500FCE307 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
+		52349DB92B1474B100FCE307 /* databaseanime.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = databaseanime.db; sourceTree = "<group>"; };
+		52349DBB2B1474FE00FCE307 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		52349DBD2B148C5200FCE307 /* ListPosterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPosterVC.swift; sourceTree = "<group>"; };
+		52349DBE2B148C5200FCE307 /* ListPosterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListPosterVC.xib; sourceTree = "<group>"; };
+		52349DC12B14906B00FCE307 /* PosterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterCell.swift; sourceTree = "<group>"; };
+		52349DC22B14906B00FCE307 /* PosterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PosterCell.xib; sourceTree = "<group>"; };
+		52349DC52B1490F700FCE307 /* PosterFavouriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterFavouriteVC.swift; sourceTree = "<group>"; };
+		52349DC62B1490F700FCE307 /* PosterFavouriteVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PosterFavouriteVC.xib; sourceTree = "<group>"; };
+		52349DC92B14911600FCE307 /* PosterFavouriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterFavouriteCell.swift; sourceTree = "<group>"; };
+		52349DCA2B14911600FCE307 /* PosterFavouriteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PosterFavouriteCell.xib; sourceTree = "<group>"; };
+		5264A6782AF0D81D009CEB62 /* AnimeDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimeDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5264A67B2AF0D81D009CEB62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5264A67D2AF0D81D009CEB62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5264A6842AF0D81E009CEB62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5264A6872AF0D81E009CEB62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5264A6892AF0D81E009CEB62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5264A68E2AF0D81E009CEB62 /* AnimeDrawTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimeDrawTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5264A6922AF0D81E009CEB62 /* AnimeDrawTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDrawTests.swift; sourceTree = "<group>"; };
+		5264A6982AF0D81E009CEB62 /* AnimeDrawUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimeDrawUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5264A69C2AF0D81E009CEB62 /* AnimeDrawUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDrawUITests.swift; sourceTree = "<group>"; };
+		5264A69E2AF0D81E009CEB62 /* AnimeDrawUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDrawUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5264A6AC2AF0DA58009CEB62 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		5264A6AD2AF0DA58009CEB62 /* HomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		5264A6AE2AF0DA58009CEB62 /* SplashVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
+		5264A6AF2AF0DA58009CEB62 /* SplashVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashVC.xib; sourceTree = "<group>"; };
+		5264A6B52AF0DC90009CEB62 /* anim_loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = anim_loading.json; sourceTree = "<group>"; };
+		5264A6B82AF0DCCE009CEB62 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		5264A6C12AF0F93B009CEB62 /* Poster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poster.swift; sourceTree = "<group>"; };
+		5264A6C42AF0FAAE009CEB62 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5265877E2B15862800C66B48 /* PracticeDrawAnimeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeDrawAnimeVC.swift; sourceTree = "<group>"; };
+		5265877F2B15862800C66B48 /* PracticeDrawAnimeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PracticeDrawAnimeVC.xib; sourceTree = "<group>"; };
+		526587822B158C1E00C66B48 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		526587842B158C8100C66B48 /* HistoryDrawVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDrawVC.swift; sourceTree = "<group>"; };
+		526587852B158C8100C66B48 /* HistoryDrawVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryDrawVC.xib; sourceTree = "<group>"; };
+		526587882B158C9E00C66B48 /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		526587892B158C9E00C66B48 /* HistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryCell.xib; sourceTree = "<group>"; };
+		5265878C2B15916800C66B48 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		5265878E2B15919D00C66B48 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		526587902B15CF3B00C66B48 /* PracticeInfoAnimeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PracticeInfoAnimeVC.swift; sourceTree = "<group>"; };
+		526587912B15CF3B00C66B48 /* PracticeInfoAnimeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PracticeInfoAnimeVC.xib; sourceTree = "<group>"; };
+		5286AD092AFB35C300ECF7EA /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		5286AD0C2AFB6C2C00ECF7EA /* Saira-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Saira-Regular.ttf"; sourceTree = "<group>"; };
+		5286AD0D2AFB6C2D00ECF7EA /* Saira-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Saira-Bold.ttf"; sourceTree = "<group>"; };
+		5286AD0E2AFB6C2D00ECF7EA /* Saira-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Saira-Medium.ttf"; sourceTree = "<group>"; };
+		5286AD0F2AFB6C2D00ECF7EA /* Saira-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Saira-SemiBold.ttf"; sourceTree = "<group>"; };
+		5286AD142AFB713400ECF7EA /* DrawAnimeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawAnimeVC.swift; sourceTree = "<group>"; };
+		5286AD152AFB713400ECF7EA /* DrawAnimeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrawAnimeVC.xib; sourceTree = "<group>"; };
+		5286AD1A2AFB716400ECF7EA /* DrawPosterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawPosterVC.swift; sourceTree = "<group>"; };
+		5286AD1B2AFB716400ECF7EA /* DrawPosterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrawPosterVC.xib; sourceTree = "<group>"; };
+		5286AD1E2AFB717600ECF7EA /* DrawAnimePager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawAnimePager.swift; sourceTree = "<group>"; };
+		5286AD1F2AFB717600ECF7EA /* DrawAnimePager.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrawAnimePager.xib; sourceTree = "<group>"; };
+		5286AD222AFB719700ECF7EA /* ListDrawAnimeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDrawAnimeVC.swift; sourceTree = "<group>"; };
+		5286AD232AFB719700ECF7EA /* ListDrawAnimeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListDrawAnimeVC.xib; sourceTree = "<group>"; };
+		52D6CE612AFB72BC006D9B53 /* DrawAnimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawAnimeCell.swift; sourceTree = "<group>"; };
+		52D6CE622AFB72BC006D9B53 /* DrawAnimeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrawAnimeCell.xib; sourceTree = "<group>"; };
+		88D884A774279145DC2BCFED /* Pods_AnimeDraw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimeDraw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDA8A1480711073111787312 /* Pods-AnimeDraw.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeDraw.debug.xcconfig"; path = "Target Support Files/Pods-AnimeDraw/Pods-AnimeDraw.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5264A6752AF0D81D009CEB62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AC331819A8B901F78ABF922 /* Pods_AnimeDraw.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5264A68B2AF0D81E009CEB62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5264A6952AF0D81E009CEB62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18EC754E049774BB3AE0C20D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88D884A774279145DC2BCFED /* Pods_AnimeDraw.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		522447782AFBCC8200C5D686 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				522447792AFBCC9500C5D686 /* AnimeDraw.swift */,
+				5264A6C12AF0F93B009CEB62 /* Poster.swift */,
+				526587822B158C1E00C66B48 /* History.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5264A66F2AF0D81D009CEB62 = {
+			isa = PBXGroup;
+			children = (
+				5264A67A2AF0D81D009CEB62 /* AnimeDraw */,
+				5264A6912AF0D81E009CEB62 /* AnimeDrawTests */,
+				5264A69B2AF0D81E009CEB62 /* AnimeDrawUITests */,
+				5264A6792AF0D81D009CEB62 /* Products */,
+				8D06526581A4520A09702CB1 /* Pods */,
+				18EC754E049774BB3AE0C20D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5264A6792AF0D81D009CEB62 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5264A6782AF0D81D009CEB62 /* AnimeDraw.app */,
+				5264A68E2AF0D81E009CEB62 /* AnimeDrawTests.xctest */,
+				5264A6982AF0D81E009CEB62 /* AnimeDrawUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5264A67A2AF0D81D009CEB62 /* AnimeDraw */ = {
+			isa = PBXGroup;
+			children = (
+				5286AD082AFB35A200ECF7EA /* Components */,
+				5264A6C32AF0FA9B009CEB62 /* Utils */,
+				5264A6B72AF0DCC6009CEB62 /* Base */,
+				5264A6B42AF0DC78009CEB62 /* Resources */,
+				5264A6AB2AF0DA3B009CEB62 /* ViewControllers */,
+				5264A67B2AF0D81D009CEB62 /* AppDelegate.swift */,
+				5264A67D2AF0D81D009CEB62 /* SceneDelegate.swift */,
+				5264A6842AF0D81E009CEB62 /* Assets.xcassets */,
+				5264A6862AF0D81E009CEB62 /* LaunchScreen.storyboard */,
+				5264A6892AF0D81E009CEB62 /* Info.plist */,
+			);
+			path = AnimeDraw;
+			sourceTree = "<group>";
+		};
+		5264A6912AF0D81E009CEB62 /* AnimeDrawTests */ = {
+			isa = PBXGroup;
+			children = (
+				5264A6922AF0D81E009CEB62 /* AnimeDrawTests.swift */,
+			);
+			path = AnimeDrawTests;
+			sourceTree = "<group>";
+		};
+		5264A69B2AF0D81E009CEB62 /* AnimeDrawUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5264A69C2AF0D81E009CEB62 /* AnimeDrawUITests.swift */,
+				5264A69E2AF0D81E009CEB62 /* AnimeDrawUITestsLaunchTests.swift */,
+			);
+			path = AnimeDrawUITests;
+			sourceTree = "<group>";
+		};
+		5264A6AB2AF0DA3B009CEB62 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5286AD192AFB715300ECF7EA /* DrawPoster */,
+				5286AD182AFB713D00ECF7EA /* DrawAnime */,
+				5264A6AC2AF0DA58009CEB62 /* HomeVC.swift */,
+				5264A6AD2AF0DA58009CEB62 /* HomeVC.xib */,
+				5264A6AE2AF0DA58009CEB62 /* SplashVC.swift */,
+				5264A6AF2AF0DA58009CEB62 /* SplashVC.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5264A6B42AF0DC78009CEB62 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				52349DB92B1474B100FCE307 /* databaseanime.db */,
+				5286AD0B2AFB36B900ECF7EA /* fonts */,
+				5264A6B52AF0DC90009CEB62 /* anim_loading.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5264A6B72AF0DCC6009CEB62 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5264A6B82AF0DCCE009CEB62 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5264A6C32AF0FA9B009CEB62 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5264A6C42AF0FAAE009CEB62 /* Constants.swift */,
+				52349DBB2B1474FE00FCE307 /* DatabaseManager.swift */,
+				5265878C2B15916800C66B48 /* Utils.swift */,
+				5265878E2B15919D00C66B48 /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5286AD082AFB35A200ECF7EA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5224477B2AFBD7FC00C5D686 /* UIView+constraints.swift */,
+				5286AD092AFB35C300ECF7EA /* ShadowView.swift */,
+				52349DB32B144A3F00FCE307 /* BorderView.swift */,
+				52349DB22B144A3F00FCE307 /* BorderView.xib */,
+				52349DB62B144A4500FCE307 /* BottomSheetViewController.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5286AD0B2AFB36B900ECF7EA /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5286AD0D2AFB6C2D00ECF7EA /* Saira-Bold.ttf */,
+				5286AD0E2AFB6C2D00ECF7EA /* Saira-Medium.ttf */,
+				5286AD0C2AFB6C2C00ECF7EA /* Saira-Regular.ttf */,
+				5286AD0F2AFB6C2D00ECF7EA /* Saira-SemiBold.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		5286AD182AFB713D00ECF7EA /* DrawAnime */ = {
+			isa = PBXGroup;
+			children = (
+				522447782AFBCC8200C5D686 /* Model */,
+				52D6CE602AFB7297006D9B53 /* Cell */,
+				5286AD142AFB713400ECF7EA /* DrawAnimeVC.swift */,
+				5286AD152AFB713400ECF7EA /* DrawAnimeVC.xib */,
+				5286AD1E2AFB717600ECF7EA /* DrawAnimePager.swift */,
+				5286AD1F2AFB717600ECF7EA /* DrawAnimePager.xib */,
+				5286AD222AFB719700ECF7EA /* ListDrawAnimeVC.swift */,
+				5286AD232AFB719700ECF7EA /* ListDrawAnimeVC.xib */,
+				5265877E2B15862800C66B48 /* PracticeDrawAnimeVC.swift */,
+				5265877F2B15862800C66B48 /* PracticeDrawAnimeVC.xib */,
+				526587842B158C8100C66B48 /* HistoryDrawVC.swift */,
+				526587852B158C8100C66B48 /* HistoryDrawVC.xib */,
+				526587902B15CF3B00C66B48 /* PracticeInfoAnimeVC.swift */,
+				526587912B15CF3B00C66B48 /* PracticeInfoAnimeVC.xib */,
+			);
+			path = DrawAnime;
+			sourceTree = "<group>";
+		};
+		5286AD192AFB715300ECF7EA /* DrawPoster */ = {
+			isa = PBXGroup;
+			children = (
+				5286AD1A2AFB716400ECF7EA /* DrawPosterVC.swift */,
+				5286AD1B2AFB716400ECF7EA /* DrawPosterVC.xib */,
+				52349DBD2B148C5200FCE307 /* ListPosterVC.swift */,
+				52349DBE2B148C5200FCE307 /* ListPosterVC.xib */,
+				52349DC12B14906B00FCE307 /* PosterCell.swift */,
+				52349DC22B14906B00FCE307 /* PosterCell.xib */,
+				52349DC52B1490F700FCE307 /* PosterFavouriteVC.swift */,
+				52349DC62B1490F700FCE307 /* PosterFavouriteVC.xib */,
+				52349DC92B14911600FCE307 /* PosterFavouriteCell.swift */,
+				52349DCA2B14911600FCE307 /* PosterFavouriteCell.xib */,
+			);
+			path = DrawPoster;
+			sourceTree = "<group>";
+		};
+		52D6CE602AFB7297006D9B53 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				52D6CE612AFB72BC006D9B53 /* DrawAnimeCell.swift */,
+				52D6CE622AFB72BC006D9B53 /* DrawAnimeCell.xib */,
+				52349DAE2B1449F900FCE307 /* DrawThumbnailCell.swift */,
+				52349DAF2B1449F900FCE307 /* DrawThumbnailCell.xib */,
+				526587882B158C9E00C66B48 /* HistoryCell.swift */,
+				526587892B158C9E00C66B48 /* HistoryCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8D06526581A4520A09702CB1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BDA8A1480711073111787312 /* Pods-AnimeDraw.debug.xcconfig */,
+				3D0C7C68F49DFF94C4AC3B19 /* Pods-AnimeDraw.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5264A6772AF0D81D009CEB62 /* AnimeDraw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5264A6A22AF0D81E009CEB62 /* Build configuration list for PBXNativeTarget "AnimeDraw" */;
+			buildPhases = (
+				9A6410B0FFAE090D975344A6 /* [CP] Check Pods Manifest.lock */,
+				5264A6742AF0D81D009CEB62 /* Sources */,
+				5264A6752AF0D81D009CEB62 /* Frameworks */,
+				5264A6762AF0D81D009CEB62 /* Resources */,
+				D1F745D96EDD47E122C07A60 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnimeDraw;
+			productName = AnimeDraw;
+			productReference = 5264A6782AF0D81D009CEB62 /* AnimeDraw.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5264A68D2AF0D81E009CEB62 /* AnimeDrawTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5264A6A52AF0D81E009CEB62 /* Build configuration list for PBXNativeTarget "AnimeDrawTests" */;
+			buildPhases = (
+				5264A68A2AF0D81E009CEB62 /* Sources */,
+				5264A68B2AF0D81E009CEB62 /* Frameworks */,
+				5264A68C2AF0D81E009CEB62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5264A6902AF0D81E009CEB62 /* PBXTargetDependency */,
+			);
+			name = AnimeDrawTests;
+			productName = AnimeDrawTests;
+			productReference = 5264A68E2AF0D81E009CEB62 /* AnimeDrawTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5264A6972AF0D81E009CEB62 /* AnimeDrawUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5264A6A82AF0D81E009CEB62 /* Build configuration list for PBXNativeTarget "AnimeDrawUITests" */;
+			buildPhases = (
+				5264A6942AF0D81E009CEB62 /* Sources */,
+				5264A6952AF0D81E009CEB62 /* Frameworks */,
+				5264A6962AF0D81E009CEB62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5264A69A2AF0D81E009CEB62 /* PBXTargetDependency */,
+			);
+			name = AnimeDrawUITests;
+			productName = AnimeDrawUITests;
+			productReference = 5264A6982AF0D81E009CEB62 /* AnimeDrawUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5264A6702AF0D81D009CEB62 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					5264A6772AF0D81D009CEB62 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					5264A68D2AF0D81E009CEB62 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 5264A6772AF0D81D009CEB62;
+					};
+					5264A6972AF0D81E009CEB62 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 5264A6772AF0D81D009CEB62;
+					};
+				};
+			};
+			buildConfigurationList = 5264A6732AF0D81D009CEB62 /* Build configuration list for PBXProject "AnimeDraw" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5264A66F2AF0D81D009CEB62;
+			productRefGroup = 5264A6792AF0D81D009CEB62 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5264A6772AF0D81D009CEB62 /* AnimeDraw */,
+				5264A68D2AF0D81E009CEB62 /* AnimeDrawTests */,
+				5264A6972AF0D81E009CEB62 /* AnimeDrawUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5264A6762AF0D81D009CEB62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5286AD102AFB6C7300ECF7EA /* Saira-Bold.ttf in Resources */,
+				5286AD112AFB6C7300ECF7EA /* Saira-Medium.ttf in Resources */,
+				52349DCC2B14911600FCE307 /* PosterFavouriteCell.xib in Resources */,
+				52349DC42B14906B00FCE307 /* PosterCell.xib in Resources */,
+				5286AD122AFB6C7300ECF7EA /* Saira-Regular.ttf in Resources */,
+				52349DC02B148C5200FCE307 /* ListPosterVC.xib in Resources */,
+				52349DB12B1449F900FCE307 /* DrawThumbnailCell.xib in Resources */,
+				5286AD172AFB713400ECF7EA /* DrawAnimeVC.xib in Resources */,
+				5286AD132AFB6C7300ECF7EA /* Saira-SemiBold.ttf in Resources */,
+				5264A6882AF0D81E009CEB62 /* LaunchScreen.storyboard in Resources */,
+				5265878B2B158C9E00C66B48 /* HistoryCell.xib in Resources */,
+				526587812B15862800C66B48 /* PracticeDrawAnimeVC.xib in Resources */,
+				52D6CE642AFB72BC006D9B53 /* DrawAnimeCell.xib in Resources */,
+				52349DB42B144A3F00FCE307 /* BorderView.xib in Resources */,
+				526587872B158C8100C66B48 /* HistoryDrawVC.xib in Resources */,
+				5286AD212AFB717600ECF7EA /* DrawAnimePager.xib in Resources */,
+				5264A6B62AF0DC90009CEB62 /* anim_loading.json in Resources */,
+				52349DC82B1490F700FCE307 /* PosterFavouriteVC.xib in Resources */,
+				5264A6B12AF0DA58009CEB62 /* HomeVC.xib in Resources */,
+				5264A6B32AF0DA58009CEB62 /* SplashVC.xib in Resources */,
+				5264A6852AF0D81E009CEB62 /* Assets.xcassets in Resources */,
+				526587932B15CF3B00C66B48 /* PracticeInfoAnimeVC.xib in Resources */,
+				52349DBA2B1474B100FCE307 /* databaseanime.db in Resources */,
+				5286AD1D2AFB716400ECF7EA /* DrawPosterVC.xib in Resources */,
+				5286AD252AFB719700ECF7EA /* ListDrawAnimeVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5264A68C2AF0D81E009CEB62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5264A6962AF0D81E009CEB62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9A6410B0FFAE090D975344A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnimeDraw-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1F745D96EDD47E122C07A60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimeDraw/Pods-AnimeDraw-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimeDraw/Pods-AnimeDraw-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AnimeDraw/Pods-AnimeDraw-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5264A6742AF0D81D009CEB62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5286AD1C2AFB716400ECF7EA /* DrawPosterVC.swift in Sources */,
+				5286AD0A2AFB35C300ECF7EA /* ShadowView.swift in Sources */,
+				5286AD202AFB717600ECF7EA /* DrawAnimePager.swift in Sources */,
+				5265878D2B15916800C66B48 /* Utils.swift in Sources */,
+				5286AD242AFB719700ECF7EA /* ListDrawAnimeVC.swift in Sources */,
+				52D6CE632AFB72BC006D9B53 /* DrawAnimeCell.swift in Sources */,
+				52349DC32B14906B00FCE307 /* PosterCell.swift in Sources */,
+				5265878F2B15919D00C66B48 /* Extensions.swift in Sources */,
+				526587922B15CF3B00C66B48 /* PracticeInfoAnimeVC.swift in Sources */,
+				5264A6B92AF0DCCE009CEB62 /* BaseViewController.swift in Sources */,
+				5264A6B22AF0DA58009CEB62 /* SplashVC.swift in Sources */,
+				526587802B15862800C66B48 /* PracticeDrawAnimeVC.swift in Sources */,
+				526587832B158C1E00C66B48 /* History.swift in Sources */,
+				5264A6C22AF0F93B009CEB62 /* Poster.swift in Sources */,
+				526587862B158C8100C66B48 /* HistoryDrawVC.swift in Sources */,
+				5265878A2B158C9E00C66B48 /* HistoryCell.swift in Sources */,
+				52349DB02B1449F900FCE307 /* DrawThumbnailCell.swift in Sources */,
+				5264A6B02AF0DA58009CEB62 /* HomeVC.swift in Sources */,
+				5264A67C2AF0D81D009CEB62 /* AppDelegate.swift in Sources */,
+				5224477A2AFBCC9500C5D686 /* AnimeDraw.swift in Sources */,
+				52349DBC2B1474FE00FCE307 /* DatabaseManager.swift in Sources */,
+				52349DCB2B14911600FCE307 /* PosterFavouriteCell.swift in Sources */,
+				52349DB72B144A4500FCE307 /* BottomSheetViewController.swift in Sources */,
+				5286AD162AFB713400ECF7EA /* DrawAnimeVC.swift in Sources */,
+				5264A67E2AF0D81D009CEB62 /* SceneDelegate.swift in Sources */,
+				5264A6C52AF0FAAE009CEB62 /* Constants.swift in Sources */,
+				52349DB52B144A3F00FCE307 /* BorderView.swift in Sources */,
+				52349DC72B1490F700FCE307 /* PosterFavouriteVC.swift in Sources */,
+				5224477C2AFBD7FC00C5D686 /* UIView+constraints.swift in Sources */,
+				52349DBF2B148C5200FCE307 /* ListPosterVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5264A68A2AF0D81E009CEB62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5264A6932AF0D81E009CEB62 /* AnimeDrawTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5264A6942AF0D81E009CEB62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5264A69D2AF0D81E009CEB62 /* AnimeDrawUITests.swift in Sources */,
+				5264A69F2AF0D81E009CEB62 /* AnimeDrawUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5264A6902AF0D81E009CEB62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5264A6772AF0D81D009CEB62 /* AnimeDraw */;
+			targetProxy = 5264A68F2AF0D81E009CEB62 /* PBXContainerItemProxy */;
+		};
+		5264A69A2AF0D81E009CEB62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5264A6772AF0D81D009CEB62 /* AnimeDraw */;
+			targetProxy = 5264A6992AF0D81E009CEB62 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5264A6862AF0D81E009CEB62 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5264A6872AF0D81E009CEB62 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5264A6A02AF0D81E009CEB62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5264A6A12AF0D81E009CEB62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5264A6A32AF0D81E009CEB62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDA8A1480711073111787312 /* Pods-AnimeDraw.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CTJV9F3L52;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AnimeDraw/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cuong.media.AnimeDraw;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5264A6A42AF0D81E009CEB62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D0C7C68F49DFF94C4AC3B19 /* Pods-AnimeDraw.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CTJV9F3L52;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AnimeDraw/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cuong.media.AnimeDraw;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5264A6A62AF0D81E009CEB62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CTJV9F3L52;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cuong.media.AnimeDrawTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnimeDraw.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AnimeDraw";
+			};
+			name = Debug;
+		};
+		5264A6A72AF0D81E009CEB62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CTJV9F3L52;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cuong.media.AnimeDrawTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnimeDraw.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AnimeDraw";
+			};
+			name = Release;
+		};
+		5264A6A92AF0D81E009CEB62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CTJV9F3L52;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cuong.media.AnimeDrawUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AnimeDraw;
+			};
+			name = Debug;
+		};
+		5264A6AA2AF0D81E009CEB62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CTJV9F3L52;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cuong.media.AnimeDrawUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AnimeDraw;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5264A6732AF0D81D009CEB62 /* Build configuration list for PBXProject "AnimeDraw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5264A6A02AF0D81E009CEB62 /* Debug */,
+				5264A6A12AF0D81E009CEB62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5264A6A22AF0D81E009CEB62 /* Build configuration list for PBXNativeTarget "AnimeDraw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5264A6A32AF0D81E009CEB62 /* Debug */,
+				5264A6A42AF0D81E009CEB62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5264A6A52AF0D81E009CEB62 /* Build configuration list for PBXNativeTarget "AnimeDrawTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5264A6A62AF0D81E009CEB62 /* Debug */,
+				5264A6A72AF0D81E009CEB62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5264A6A82AF0D81E009CEB62 /* Build configuration list for PBXNativeTarget "AnimeDrawUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5264A6A92AF0D81E009CEB62 /* Debug */,
+				5264A6AA2AF0D81E009CEB62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5264A6702AF0D81D009CEB62 /* Project object */;
+}
